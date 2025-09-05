@@ -4,7 +4,6 @@
     </a>
 </h2>
 <h2 align="center">
-   NETWORK PROGRAMMING
   Ứng dụng Điều Khiển Máy Tính Từ Xa
 </h2>
 <div align="center">
