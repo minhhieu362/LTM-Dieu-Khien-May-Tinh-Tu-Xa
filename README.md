@@ -31,7 +31,7 @@
 - Làm việc từ xa (Remote Work).
 - Quản trị hệ thống & server.
 
-🔧 2. Công nghệ sử dụng
+## 🔧 2. Công nghệ sử dụng
 📡 Java TCP Socket
 
 Được dùng để triển khai mô hình Client-Server.
@@ -68,9 +68,10 @@ Có thể mở rộng với Java RMI hoặc Socket bảo mật (SSL).
 
 Dễ tích hợp thêm các tính năng nâng cao: truyền file, chia sẻ màn hình, chat.
 
-🚀 3. Hình ảnh các chức năng
+## 🚀 3. Hình ảnh các chức năng
 <p align="center"> <img src="docs/clientUI.png" alt="Client UI" width="800"/> </p> <p align="center"> <em>Hình 1: Giao diện Client – cho phép nhập IP, Port, và gửi lệnh đến Server.</em> </p> <p align="center"> <img src="docs/serverUI.png" alt="Server UI" width="800"/> </p> <p align="center"> <em>Hình 2: Giao diện Server – hiển thị log kết nối và lệnh nhận được từ Client.</em> </p>
-📝 4. Hướng dẫn cài đặt và sử dụng
+
+## 📝 4. Hướng dẫn cài đặt và sử dụng
 🔧 Yêu cầu hệ thống
 
 Java Development Kit (JDK): Phiên bản 8 trở lên.
@@ -81,7 +82,7 @@ Môi trường phát triển: Eclipse / IntelliJ IDEA / VS Code hoặc terminal.
 
 Dung lượng: khoảng 20MB cho mã nguồn và file thực thi.
 
-📦 Cài đặt và triển khai
+### 📦 Cài đặt và triển khai
 Bước 1: Chuẩn bị môi trường
 
 Kiểm tra Java:
@@ -116,7 +117,7 @@ Nhập IP của Server + Port → nhấn Connect.
 
 Sau khi kết nối thành công, có thể chọn lệnh (shutdown, restart, mở app, gửi tin nhắn…).
 
-🚀 Sử dụng ứng dụng
+### 🚀 Sử dụng ứng dụng
 
 Kết nối
 
@@ -129,20 +130,16 @@ Nhấn Connect để kết nối.
 Chọn lệnh từ menu hoặc nhập trực tiếp.
 
 Ví dụ:
-
-🔴 Shutdown: Tắt máy Server.
-
-♻️ Restart: Khởi động lại máy Server.
-
+.
+📤 Connect: Ngắt kết nối Client-Server.
 📤 Disconnect: Ngắt kết nối Client-Server.
 
-💬 Message: Gửi tin nhắn popup đến Server.
 
 Theo dõi log
 
 Tất cả lệnh và phản hồi sẽ hiển thị trên giao diện Client và Server.
 
-📌 5. Liên hệ
+## 5. Liên Hệ
 
 Họ tên: Nguyễn Minh Hiếu
 
