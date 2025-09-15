@@ -31,67 +31,126 @@
 - Làm việc từ xa (Remote Work).
 - Quản trị hệ thống & server.
 
-## 🔧 2. Ngôn ngữ lập trình sử dụng: [![Java](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white)](https://www.java.com/)
-    Thư viện sử dụng trong Java:
+🔧 2. Công nghệ sử dụng
+📡 Java TCP Socket
 
-- java.net → Socket, ServerSocket (gửi/nhận dữ liệu).
+Được dùng để triển khai mô hình Client-Server.
 
-- java.awt.Robot → điều khiển chuột, bàn phím.
+Server lắng nghe và chấp nhận kết nối từ Client.
 
-- javax.imageio.ImageIO → đọc/ghi ảnh (truyền màn hình).
+Client gửi lệnh điều khiển từ xa (shutdown, restart, disconnect, mở ứng dụng, gửi tin nhắn…) đến Server.
 
-- javax.swing → hiển thị giao diện Client.
+Server thực hiện lệnh trực tiếp trên máy tính của nó và trả kết quả về cho Client.
 
-## 🚀 3. Các project đã thực hiện
-Cấu trúc:
+🎨 Java Swing
 
-![alt text]
+Xây dựng giao diện người dùng (GUI) cho Client:
 
-1. Chuẩn bị
+JFrame, JPanel: Tổ chức giao diện chính.
 
-- Cài Java JDK 8+ (bạn đang dùng jre1.8.0_201 là ok).
+JButton, JTextField, JComboBox: Cho phép nhập lệnh hoặc chọn hành động điều khiển.
 
-- Máy A: chạy RemoteServer.java (máy bị điều khiển – bạn bè).
+JTextArea: Hiển thị trạng thái, log kết nối và phản hồi từ Server.
 
-- Máy B: chạy RemoteClient.java (máy điều khiển – bạn).
+JOptionPane: Hiển thị thông báo hoặc xác nhận khi thực hiện thao tác nguy hiểm (shutdown, restart).
 
-- Hai máy phải nằm cùng mạng LAN/WiFi hoặc có thể kết nối qua Internet (cần mở port).
+⚙️ Mô hình hoạt động
 
-2. Lấy địa chỉ IP của Server
+Server: Chạy ngầm trên máy cần điều khiển, luôn trong trạng thái sẵn sàng nhận lệnh.
 
-- Trên máy bị điều khiển (máy chạy RemoteServer.java):
+Client: Người dùng nhập IP + Port để kết nối đến Server. Sau khi kết nối thành công có thể gửi các lệnh từ xa.
 
-- Windows: mở CMD → gõ ipconfig → lấy IPv4, ví dụ 192.168.1.10.
+Kết nối TCP đảm bảo dữ liệu được truyền tin cậy và theo thứ tự.
 
-- Linux/Mac: mở Terminal → gõ ifconfig
-![alt text](image-1.png)
+Hỗ trợ:
 
-- Sau đó lấy địa chỉ IP Wifi của máy bị điều khiển thay vào host trong RemoteClient.
+Có thể mở rộng với Java RMI hoặc Socket bảo mật (SSL).
 
-3. Chạy chương trình
+Dễ tích hợp thêm các tính năng nâng cao: truyền file, chia sẻ màn hình, chat.
 
-- Trên máy bị điều khiển (Server):
+🚀 3. Hình ảnh các chức năng
+<p align="center"> <img src="docs/clientUI.png" alt="Client UI" width="800"/> </p> <p align="center"> <em>Hình 1: Giao diện Client – cho phép nhập IP, Port, và gửi lệnh đến Server.</em> </p> <p align="center"> <img src="docs/serverUI.png" alt="Server UI" width="800"/> </p> <p align="center"> <em>Hình 2: Giao diện Server – hiển thị log kết nối và lệnh nhận được từ Client.</em> </p>
+📝 4. Hướng dẫn cài đặt và sử dụng
+🔧 Yêu cầu hệ thống
 
-- Mở Eclipse → chuột phải RemoteServer.java → Run As → Java Application.
+Java Development Kit (JDK): Phiên bản 8 trở lên.
 
-- Console sẽ in:
+Hệ điều hành: Windows, macOS, hoặc Linux.
 
-    Server is running on port 5000...
-    Waiting for client connection...
+Môi trường phát triển: Eclipse / IntelliJ IDEA / VS Code hoặc terminal.
 
-- Trên máy tôi (Client):
+Dung lượng: khoảng 20MB cho mã nguồn và file thực thi.
 
-- Mở Eclipse → sửa IP trong RemoteClient.java như trên.
+📦 Cài đặt và triển khai
+Bước 1: Chuẩn bị môi trường
 
-- Chuột phải RemoteClient.java → Run As → Java Application.
+Kiểm tra Java:
 
-5. Kết quả
+java -version
+javac -version
 
-![alt text](image.png)
 
-## 📝 4. License
+Tải mã nguồn: clone project từ GitHub hoặc giải nén file.
+
+Bước 2: Biên dịch mã nguồn
+
+Mở terminal, điều hướng đến thư mục src.
+
+Biên dịch toàn bộ project:
+
+javac src/**/*.java
+
+Bước 3: Chạy ứng dụng
+
+Khởi động Server:
+
+Mở ServerMain.java và chạy.
+
+Server sẽ khởi động và lắng nghe tại IP:Port cấu hình sẵn.
+
+Khởi động Client:
+
+Mở ClientMain.java và chạy.
+
+Nhập IP của Server + Port → nhấn Connect.
+
+Sau khi kết nối thành công, có thể chọn lệnh (shutdown, restart, mở app, gửi tin nhắn…).
+
+🚀 Sử dụng ứng dụng
+
+Kết nối
+
+Nhập IP và Port của Server.
+
+Nhấn Connect để kết nối.
+
+Điều khiển máy tính từ xa
+
+Chọn lệnh từ menu hoặc nhập trực tiếp.
+
+Ví dụ:
+
+🔴 Shutdown: Tắt máy Server.
+
+♻️ Restart: Khởi động lại máy Server.
+
+📤 Disconnect: Ngắt kết nối Client-Server.
+
+💬 Message: Gửi tin nhắn popup đến Server.
+
+Theo dõi log
+
+Tất cả lệnh và phản hồi sẽ hiển thị trên giao diện Client và Server.
+
+📌 5. Liên hệ
+
+Họ tên: Nguyễn Minh Hiếu
+
+Lớp: CNTT16-03
+
+Email: minhhieu010904@gmail.com
+
+Zalo: 0369864785
 
 © 2025 AIoTLab, Faculty of Information Technology, DaiNam University. All rights reserved.
-
-Zalo: 0879885932
 ---
