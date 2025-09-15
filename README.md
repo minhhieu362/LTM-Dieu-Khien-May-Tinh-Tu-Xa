@@ -69,7 +69,9 @@ Có thể mở rộng với Java RMI hoặc Socket bảo mật (SSL).
 Dễ tích hợp thêm các tính năng nâng cao: truyền file, chia sẻ màn hình, chat.
 
 ## 🚀 3. Hình ảnh các chức năng
-<p align="center"> <img src="docs/clientUI.png" alt="Client UI" width="800"/> </p> <p align="center"> <em>Hình 1: Giao diện Client – cho phép nhập IP, Port, và gửi lệnh đến Server.</em> </p> <p align="center"> <img src="docs/serverUI.png" alt="Server UI" width="800"/> </p> <p align="center"> <em>Hình 2: Giao diện Server – hiển thị log kết nối và lệnh nhận được từ Client.</em> </p>
+<p align="center"> <img src="docs/clientUI.png" alt="<img width="989" height="695" alt="image" src="https://github.com/user-attachments/assets/12a3cb50-3882-4c3e-ac98-bfbb651f3aeb" />
+" width="800"/> </p> <p align="center"> <em>Hình 1: Giao diện Client – cho phép nhập IP, Port, và gửi lệnh đến Server.</em> </p> <p align="center"> <img src="docs/serverUI.png" alt="<img width="286" height="92" alt="image" src="https://github.com/user-attachments/assets/545f67c7-e821-48f0-ac19-73a10733937f" />
+" width="800"/> </p> <p align="center"> <em>Hình 2: Giao diện Server – hiển thị log kết nối và lệnh nhận được từ Client.</em> </p>
 
 ## 📝 4. Hướng dẫn cài đặt và sử dụng
 🔧 Yêu cầu hệ thống
