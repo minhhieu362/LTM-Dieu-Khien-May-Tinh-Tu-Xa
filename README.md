@@ -4,7 +4,7 @@
     </a>
 </h2>
 <h2 align="center">
-  Ứng dụng Điều Khiển Máy Tính Từ Xa
+  ỨNG DỤNG ĐIỀU KHIỂN MÁY TÍNH TỪ XA
 </h2>
 <div align="center">
     <p align="center">
