@@ -69,8 +69,8 @@ Có thể mở rộng với Java RMI hoặc Socket bảo mật (SSL).
 Dễ tích hợp thêm các tính năng nâng cao: truyền file, chia sẻ màn hình, chat.
 
 ## 🚀 3. Hình ảnh các chức năng
-<p align="center"> <img src="chiuchet.jpg" />
- </p> <p align="center"> <em>Hình 1: Giao diện Client – cho phép nhập IP, Port, và gửi lệnh đến Server.</em> </p> <p align="center"> <img src="duocchuaae.jpg" />
+<p align="center"> <img src="duocchuaae.jpg" />
+ </p> <p align="center"> <em>Hình 1: Giao diện Client – cho phép nhập IP, Port, và gửi lệnh đến Server.</em> </p> <p align="center"> <img src="chiuchet.jpg" />
  </p> <p align="center"> <em>Hình 2: Giao diện Server – hiển thị log kết nối và lệnh nhận được từ Client.</em> </p>
 
 ## 📝 4. Hướng dẫn cài đặt và sử dụng
