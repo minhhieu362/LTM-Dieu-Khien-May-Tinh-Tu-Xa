@@ -19,7 +19,7 @@
 
 </div>
 
-## 📖 1. Giới thiệu
+## 📖 1. Giới thiệu hệ thống
     Ứng dụng điều khiển máy tính từ xa (Remote Control) 
 - Cho phép người dùng truy cập, theo dõi và điều khiển máy tính ở xa thông qua mạng Internet hoặc mạng LAN.
 - Hệ thống cho phép một máy tính (Client) có thể kết nối và điều khiển một máy tính khác (Server/Host) theo thời gian thực.
