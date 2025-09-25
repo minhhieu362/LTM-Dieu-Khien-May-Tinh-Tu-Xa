@@ -32,15 +32,15 @@
 - Quản trị hệ thống & server.
 
 ## 🔧 2. Công nghệ sử dụng
-📡 Java TCP Socket
+🖥️ Java RMI (Remote Method Invocation)
 
-Được dùng để triển khai mô hình Client-Server.
+Được dùng để triển khai mô hình Client-Server phân tán.
 
-Server lắng nghe và chấp nhận kết nối từ Client.
+Server cung cấp các phương thức điều khiển từ xa (shutdown, restart, disconnect, mở ứng dụng, gửi tin nhắn, điều khiển chuột, bàn phím…).
 
-Client gửi lệnh điều khiển từ xa (shutdown, restart, disconnect, mở ứng dụng, gửi tin nhắn…) đến Server.
+Client gọi trực tiếp các phương thức từ Server thông qua RMI, mà không cần quản lý chi tiết kết nối TCP socket.
 
-Server thực hiện lệnh trực tiếp trên máy tính của nó và trả kết quả về cho Client.
+RMI cho phép truyền đối tượng, dữ liệu (ví dụ: ảnh màn hình) qua mạng một cách thuận tiện và bảo toàn kiểu dữ liệu.
 
 🎨 Java Swing
 
